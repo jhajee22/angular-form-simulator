@@ -1,5 +1,11 @@
 # FormSimulator
 
+
+
+<img width="1048" alt="image" src="https://github.com/user-attachments/assets/174155ee-3752-4ebe-b4d6-b740542ea541" />
+<img width="1048" alt="image" src="https://github.com/user-attachments/assets/c8193e94-4762-401a-9ce2-514ea084f4a2" />
+
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.5.
 
 ## Development server
