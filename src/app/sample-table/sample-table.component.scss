@@ -1,0 +1,127 @@
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  .centered-heading {
+    text-align: center;
+    color: #003366;
+    margin-top: 30px;
+  }
+  
+
+  .object-input-container {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* spacing between label, input, button */
+    background-color: #f0f8ff; /* light blue background */
+    padding: 16px 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    border: 1px solid #b3d9ff;
+    // width: fit-content;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .object-input-container label {
+    font-weight: 600;
+    color: #003366;
+  }
+  
+  .object-input-container input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    width: 220px;
+  }
+  
+  .object-input-container button {
+    padding: 8px 16px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .object-input-container button:hover {
+    background-color: #005fa3;
+  }
+  
+  
+  .form-container {
+    background-color: #e6f0ff; /* light blue */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 30%;
+    min-width: 150px;
+  }
+  
+  .form-group label {
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  
+  .form-group input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .submit-button  {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: red;
+  }
+
+  .btn{
+    color: red($color: #000000);
+  }
+  
+ 
+  .submit-btn:disabled {
+    cursor: not-allowed;
+  }  
+  .submitted-table-container{
+    border-radius: 10px   ;
+    // background-color: lightblue;
+  }
+  .submitted-table{  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  background-color: #ffffff;
+  }
+  .submitted-table th,
+.submitted-table td {
+  border: 1px solid #cccccc;
+  padding: 10px 15px;
+}
+
+.submitted-table th {
+  background-color: #003F88;
+  color: white;
+}
+
+.submitted-table tr:nth-child(even) {
+  background-color: #f2f9ff;
+}

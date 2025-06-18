@@ -1,0 +1,59 @@
+
+<div class="container">
+    <div>
+        <h2 class="centered-heading">Table Object Simulation</h2>
+
+    <!-- step-1 enter table object name  -->
+     
+    <div class="object-input-container">
+     <label>Enter table Object Name</label>
+     <input [(ngModel)]="objectName" placeholder="e.g., Contact or Account" />
+     <button (click)="loadObjectField()">Load Object</button>
+    </div>
+    </div>
+
+
+     <!-- Step-2 Showing dynamic form  -->
+      <div *ngIf="fields?.length">
+        <h3>{{objectName}}</h3>
+        <div class="form-container">
+        <form (ngSubmit)="submitForm()" #formRef="ngForm">
+            <div class="form-row">
+      <div class ="form-group" *ngFor="let field of fields">
+      <label>{{field.label}}</label>
+      <input [(ngModel)]="formData[field.key]"name="field.key" required/>
+    </div>  
+</div>
+    
+    <button type="submit" class="submit-button btn" [disabled]="!isFormValid()">Submit</button>
+</form>
+      </div>
+    </div>
+
+
+      <!-- Step-3 Showing Table of submitted data -->
+       <div *ngIf="submittedRecords.length >0" class="submitted-table-container">
+        <h3>Submitted Form : {{objectName}}</h3>
+        <table  class="submitted-table">
+
+            <thead>
+                <tr>
+                  <th *ngFor="let label of fieldLabels">{{ label }}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let record of submittedRecords">
+                  <td *ngFor="let key of fieldKeys">
+                    {{ record[key] }}
+                  </td>
+                </tr>
+              </tbody>
+              
+        </table>
+
+       </div>
+
+     
+
+</div>
+
